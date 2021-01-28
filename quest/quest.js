@@ -7,14 +7,12 @@ const p = document.querySelector('p');
 const img = document.querySelector('section img');
 const form = document.querySelector('form');
 
+const USER = 'USER';
+
 //this obtains the quest id from the end of the URL:
 const params = new URLSearchParams(window.location.search);
 const questId = params.get('id');
 const quest = findById(questId, quests);
-
-console.log(params);
-console.log(questId);
-console.log(quest);
 
 //and here the DOM elements are populated per the quest data:
 h1.textContent = quest.title;
@@ -55,8 +53,12 @@ form.addEventListener('submit', (e) => {
 
     const formData = new FormData(form);
     const selectionId = formData.get('choices');
-    const choice = findById(quest.choices, selectionId);
-    const user = JSON.parse(localStorage.getItem('USER'));
+    const choice = findById(selectionId, quest.choices);
+
+    const user = JSON.parse(localStorage.getItem(USER));
+
+
+    alert(choice.result);
 
     user.hp = user.hp + choice.hp;
     user.credits = user.credits + choice.credits;

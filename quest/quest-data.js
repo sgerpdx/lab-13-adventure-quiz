@@ -5,7 +5,7 @@ const iceCave = {
         top: '25%',
         left: '15%'
     },
-    image: 'monsters.jpg',
+    image: 'alchemy-logo.png',
     description: `
         Carefull of your footing, you turn on your helmet lamp and proceed around 
         several turns. Suddenly, you hear the brush of heavy footpads behind you. 
@@ -58,12 +58,12 @@ const lichenCave = {
         top: '25%',
         left: '15%'
     },
-    image: 'dragon.jpg',
+    image: 'alchemy-logo.png',
     description: `
         Entering this cave, you see the tracks of what look like large lizards. Cautious, you draw your blaster
         but find that this cave is home to a herd of tauntaun, large but docile, ridable and furry. They are
         grazing on the lichen. They look up uncertainly as you approach them from around a corner. Using your
-        hemelt's visual scanner, you detect a lone humanoid hiding among them--the fugitive. What do you do?
+        helmet's visual scanner, you detect a lone humanoid hiding among them--the fugitive. What do you do?
     `,
     choices: [{
         id: 'feed',
@@ -107,13 +107,13 @@ const bigCave = {
         top: '25%',
         left: '60%'
     },
-    image: 'treasure-chests.png',
+    image: 'alchemy-logo.png',
     description: `
         This is a truly massive cave, with snow drifts high up the walls and a roof too high to see in the 
-        low light. You crack open a glowing-green light stick and toss it high. As it comes down, you catch
-        sight of something moving on the far side of the cave. You turn your helmet lamp on high and run in
+        low light. You crack open a glowing-green light stick and toss it up as far as you can. As it comes down, you catch
+        sight of something moving on the far side of the cave. You turn your helmet lamp to max and run in
         that direction. A burst of sound and light reveals that the fugitive has shot up at the ceiling with
-        a blaster. A giant icicle falls, trigginer an small underground avalanche and blocking the way 
+        a blaster. A giant icicle falls, triggering an small underground avalanche and blocking the way 
         to the fugitive. What do you do?
     `,
     choices: [{
