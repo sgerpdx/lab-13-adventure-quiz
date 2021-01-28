@@ -1,8 +1,5 @@
-// quests[0].choices[0].description; ==> 'negotiate with them'
-
-
 const iceCave = {
-    id: 'ice-cave',
+    id: 'icecave',
     title: 'A Passage Through Deep Blue Ice',
     map: {
         top: '25%',

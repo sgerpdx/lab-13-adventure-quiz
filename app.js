@@ -1,5 +1,3 @@
-
-
 const form = document.querySelector('form');
 
 form.addEventListener('submit', (e) => {
@@ -12,7 +10,7 @@ form.addEventListener('submit', (e) => {
         armor: formData.get('armor'),
         hp: 50,
         credits: 0,
-        copmleted: {},
+        completed: {},
 
     };
 
