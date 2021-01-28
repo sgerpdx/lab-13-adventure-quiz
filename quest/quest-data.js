@@ -1,6 +1,6 @@
 const iceCave = {
     id: 'icecave',
-    title: 'A Passage Through Deep Blue Ice',
+    title: 'Deep Blue Ice',
     map: {
         top: '25%',
         left: '15%'
@@ -26,7 +26,7 @@ const iceCave = {
         hp: -15,
         credits: 250
     }, {
-        id: 'fight',
+        id: 'confront',
         description: 'Engage the creature in combat',
         result: `
             Reaching for a beskar knife, you meet the wampa in hand-to-paw combat. It siezes
@@ -53,7 +53,7 @@ const iceCave = {
 
 const lichenCave = {
     id: 'lichen-cave',
-    title: 'A Garden Under the Ice',
+    title: 'Snowy Garden',
     map: {
         top: '25%',
         left: '15%'
@@ -102,7 +102,7 @@ const lichenCave = {
 
 const bigCave = {
     id: 'big-cave',
-    title: 'A Sub-Glacial Cavern',
+    title: 'Sub-Glacial Cavern',
     map: {
         top: '25%',
         left: '60%'
