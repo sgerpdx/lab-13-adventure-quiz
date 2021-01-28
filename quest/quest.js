@@ -1,5 +1,7 @@
 import quests from './quest-data.js';
-import { findById } from '../utils.js';
+import { findById, displayStats } from '../utils.js';
+
+
 
 //these are the DOM elements to populate with quest-specific material:
 const h1 = document.querySelector('h1');
@@ -9,6 +11,7 @@ const form = document.querySelector('form');
 
 
 const USER = 'USER';
+displayStats();
 
 //this obtains the quest id from the end of the URL:
 const params = new URLSearchParams(window.location.search);
@@ -83,12 +86,12 @@ mapButton.addEventListener('click', (e) => {
     const physicalCondition = user.health;
 
 
-    console.log(user.health);
+
 
     if (physicalCondition <= 0) {
-        window.location = '../results';
+        window.location = '../results/index.html';
     } else {
-        window.location = '../map';
+        window.location = '../map/index.html';
     }
 
 });
