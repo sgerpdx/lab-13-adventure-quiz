@@ -8,8 +8,8 @@ form.addEventListener('submit', (e) => {
     const user = {
         name: formData.get('name'),
         armor: formData.get('armor'),
-        hp: 50,
-        credits: 0,
+        health: 50,
+        bounty: 0,
         completed: {},
 
     };

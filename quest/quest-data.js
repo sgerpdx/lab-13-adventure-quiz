@@ -23,8 +23,8 @@ const iceCave = {
             in two and you emerge with only half. This matters, because your employer pro-rates
             these things. 
         `,
-        hp: -15,
-        credits: 250
+        health: -15,
+        bounty: 250
     }, {
         id: 'confront',
         description: 'Engage the creature in combat',
@@ -35,8 +35,8 @@ const iceCave = {
             to kill. Though aching, you venture deeper into the dave and find the dead body of the
             fugitive; they weren't so lucky.
         `,
-        hp: -30,
-        credits: 500
+        health: -30,
+        bounty: 500
     }, {
         id: 'run-out',
         description: 'Run back out of the cave',
@@ -45,8 +45,8 @@ const iceCave = {
             have followed you, and you have only superficial damage to your armor, but now you
             have no hope of catching the fugitive in this cave.
         `,
-        hp: -10,
-        credits: 0
+        health: -10,
+        bounty: 0
     }]
 };
 
@@ -73,8 +73,8 @@ const lichenCave = {
             They are grateful to you for the high-quality lichen that you picked there. One tauntaun
             befriends you and allows you to ride it. Doing so, you catch the fugigive quickly, and alive.
         `,
-        hp: -5,
-        credits: 750
+        health: -5,
+        bounty: 750
     }, {
         id: 'blaster',
         description: 'Pull your blaster as protection from stampedes',
@@ -84,8 +84,8 @@ const lichenCave = {
             killing them. Eventually, you scare the tauntauns off with blaster shots and, though injured,
             retrieve the fugitive's body.
         `,
-        hp: -35,
-        credits: 250
+        health: -35,
+        bounty: 250
     }, {
         id: 'approach',
         description: 'Attempt to walk among the tauntauns toward the fugitive',
@@ -95,8 +95,8 @@ const lichenCave = {
             the creatures into the dark. After hours of searching, you conclude that you will freeze to death
             yourself, and you abandon the search.
         `,
-        hp: -25,
-        credits: 0
+        health: -25,
+        bounty: 0
     }]
 };
 
@@ -125,8 +125,8 @@ const bigCave = {
             ground in front of you collapses. You use your jetpack to avoid falling into the new crevasse, but
             the fugitive falls to their death. You are able to use a rope and hook to retrieve their body.
         `,
-        hp: -10,
-        credits: 500
+        health: -10,
+        bounty: 500
     }, {
         id: 'dig',
         description: 'Dig through the snow and ice by hand',
@@ -135,8 +135,8 @@ const bigCave = {
             you use a small multi-tool to painstakingly dig through the obstructing snow and ice. Several hours
             later, you make it through and find your quary, nearly frozen but alive. You take them out of the cave.
         `,
-        hp: -45,
-        credits: 750
+        health: -45,
+        bounty: 750
     }, {
         id: 'abandon',
         description: 'You decide that it is not worth the effort and leave this cave',
@@ -144,8 +144,8 @@ const bigCave = {
             Doubtful about the safety of this cave, you conclude that it will either take too much effort, and/or
             be too dangerous, to try and clear the obstructions. You write this fugitive off and leave the cave.
         `,
-        hp: 35,
-        credits: 0
+        health: 35,
+        bounty: 0
     }]
 };
 

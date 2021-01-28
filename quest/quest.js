@@ -7,6 +7,7 @@ const p = document.querySelector('p');
 const img = document.querySelector('section img');
 const form = document.querySelector('form');
 
+
 const USER = 'USER';
 
 //this obtains the quest id from the end of the URL:
@@ -47,25 +48,47 @@ button.textContent = 'Submit';
 form.appendChild(button);
 
 //this event listener looks at the data, determines which choice, retrieves user object from locStore,
-//updates health and credits, marks quest as complete, pushes back to locStore, sends user back to map;
+//updates health and bounty, marks quest as complete, pushes back to locStore, sends user back to map;
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const formData = new FormData(form);
     const selectionId = formData.get('choices');
     const choice = findById(selectionId, quest.choices);
+    //because "choices" is the name of the radio button (line 35).
 
     const user = JSON.parse(localStorage.getItem(USER));
 
+    //alert(choice.result);
+    const span = document.querySelector('span');
+    span.textContent = choice.result;
 
-    alert(choice.result);
 
-    user.hp = user.hp + choice.hp;
-    user.credits = user.credits + choice.credits;
+    user.health = user.health + choice.health;
+    user.bounty = user.bounty + choice.bounty;
     user.completed[questId] = true;
 
     localStorage.setItem('USER', JSON.stringify(user));
 
-    window.location = '../map';
+
+});
+
+
+const mapButton = document.getElementById('return');
+
+mapButton.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const user = JSON.parse(localStorage.getItem(USER));
+    const physicalCondition = user.health;
+
+
+    console.log(user.health);
+
+    if (physicalCondition <= 0) {
+        window.location = '../results';
+    } else {
+        window.location = '../map';
+    }
 
 });
