@@ -19,3 +19,4 @@ export function financialDescription(bounty) {
         return 'neutral';
     }
 }
+

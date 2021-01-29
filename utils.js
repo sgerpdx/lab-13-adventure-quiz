@@ -21,7 +21,4 @@ export function displayStats() {
 
 }
 
-//the output of this function is a couple of *strings* e.g. :
-//   health: 20
-//   credits: 1000
 
