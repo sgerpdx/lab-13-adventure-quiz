@@ -3,7 +3,7 @@ const iceCave = {
     title: 'The Ice Cave',
     map: {
         top: '50%',
-        left: '25%'
+        left: '0%'
     },
     image: 'cave-blue-ice.jpg',
     description: `
@@ -56,7 +56,7 @@ const lichenCave = {
     title: 'The Lichen Cave',
     map: {
         top: '80%',
-        left: '55%'
+        left: '100%'
     },
     image: 'cave-winter-lichen.jpg',
     description: `
@@ -104,8 +104,8 @@ const bigCave = {
     id: 'big-cave',
     title: 'The Large Cave',
     map: {
-        top: '115%',
-        left: '35%'
+        top: '100%',
+        left: '50%'
     },
     image: 'cave-large-mouth.jpg',
     description: `
