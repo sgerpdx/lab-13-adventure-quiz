@@ -19,10 +19,11 @@ const questId = params.get('id');
 const quest = findById(questId, quests);
 
 //and here the DOM elements are populated per the quest data:
-h1.textContent = quest.title;
-
-p.textContent = quest.description;
 img.src = `../assets/${quest.image}`;
+img.width = '200';
+h1.textContent = quest.title;
+p.textContent = quest.description;
+
 
 
 for (let choice of quest.choices) {

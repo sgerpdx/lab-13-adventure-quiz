@@ -1,7 +1,6 @@
 //import { findById } from '../utils.js';
 //import quests from '../quest/quest-data.js';
 import { physicalDescription, financialDescription } from '../results/results-utils.js';
-import { displayStats } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -132,19 +131,6 @@ test('This test should take in a value of 2100 for hp and return good', (assert)
     assert.equal(actual, expected);
 });
 
-
-// Test for displayStats function:
-
-test('This test should take in a user object', (assert) => {
-
-    const USER = '{"name":"Ernest","armor":"blue","health":20,"bounty":1500,"completed":{"icecave":true,"lichen-cave":true,"big-cave":true}}';
-
-    const expected = ;
-
-    const actual = displayStats();
-
-    assert.equal(actual, expected);
-});
 
 
 
