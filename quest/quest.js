@@ -7,15 +7,15 @@ displayStats();
 
 const h1 = document.querySelector('h1');
 const p = document.querySelector('p');
-const img = document.querySelector('section img');
+const questImg = document.getElementById('quest-image');
 const form = document.querySelector('form');
 
 const params = new URLSearchParams(window.location.search);
 const questId = params.get('id');
 const quest = findById(questId, quests);
 
-img.src = `../assets/${quest.image}`;
-img.width = '200';
+questImg.src = `../assets/${quest.image}`;
+questImg.width = '200';
 h1.textContent = quest.title;
 p.textContent = quest.description;
 

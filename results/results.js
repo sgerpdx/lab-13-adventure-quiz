@@ -1,5 +1,5 @@
 import { healthFeedback, wealthFeedback } from './condition-arrays.js';
-import { physicalDescription, financialDescription } from './results-utils.js';
+import { physicalDescription, financialDescription, clearStats } from './results-utils.js';
 import { displayStats } from '../utils.js';
 
 
@@ -36,7 +36,9 @@ if (user.health <= 0) {
 
 const button = document.getElementById('replay');
 button.addEventListener('click', () => {
-    //clearRecord();
+
+    clearStats();
+
     window.location.href = '../index.html';
 });
 
