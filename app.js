@@ -1,4 +1,7 @@
 const form = document.querySelector('form');
+import { displayStats } from './utils.js';
+
+displayStats();
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();

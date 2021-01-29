@@ -2,7 +2,8 @@ import quests from './quest-data.js';
 import { findById, displayStats } from '../utils.js';
 
 
-
+const USER = 'USER';
+displayStats();
 //these are the DOM elements to populate with quest-specific material:
 const h1 = document.querySelector('h1');
 const p = document.querySelector('p');
@@ -10,8 +11,7 @@ const img = document.querySelector('section img');
 const form = document.querySelector('form');
 
 
-const USER = 'USER';
-displayStats();
+
 
 //this obtains the quest id from the end of the URL:
 const params = new URLSearchParams(window.location.search);
@@ -63,7 +63,7 @@ form.addEventListener('submit', (e) => {
     const user = JSON.parse(localStorage.getItem(USER));
 
     //alert(choice.result);
-    const span = document.querySelector('span');
+    const span = document.getElementById('choice-result');
     span.textContent = choice.result;
 
 

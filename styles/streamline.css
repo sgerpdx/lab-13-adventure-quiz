@@ -1,0 +1,50 @@
+body {
+
+}
+
+header {
+    display: grid;
+    grid-template-rows: 25% 70% 5%;
+}
+
+.top-bar {
+    display: grid;
+    align-items: center;
+    justify-content: right;
+}
+
+.title-bar {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+.border-bar {
+    box-shadow: var(--shadow);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px double royalblue;
+    width: 560px;
+    background-color: white;
+}
+
+.start-button, .user-controls {
+    display: block;
+    margin: 15px;
+}
+
+.start-button {
+    background-color: royalblue;
+    color: white;
+}

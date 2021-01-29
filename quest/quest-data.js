@@ -1,16 +1,16 @@
 const iceCave = {
     id: 'icecave',
-    title: 'Deep Blue Ice',
+    title: 'The Ice Cave',
     map: {
         top: '25%',
         left: '15%'
     },
-    image: 'alchemy-logo.png',
+    image: 'cave-blue-ice.jpg',
     description: `
         Carefull of your footing, you turn on your helmet lamp and proceed around 
         several turns. Suddenly, you hear the brush of heavy footpads behind you. 
         As you turn to look, you are hit by the paw of a wampa, a fearsome ice beast. 
-        Thrown against a wall of blue ice, you struggle back to your feet, dazed. What to do?
+        Thrown against a wall of solid blue ice, you struggle back to your feet, dazed. What to do?
     `,
     choices: [{
         id: 'run-in',
@@ -29,9 +29,9 @@ const iceCave = {
         id: 'confront',
         description: 'Engage the creature in combat',
         result: `
-            Reaching for a beskar knife, you meet the wampa in hand-to-paw combat. It siezes
+            Reaching for your beskar knife, you meet the wampa in hand-to-paw combat. It siezes
             you in its powerful arms and you can feel your ribs straining. Eventually, you stab
-            a soft spot in its fur, and it drops you. You back up and draw your blaster, shooting
+            a soft spot in its fur, and it drops you. You back away and draw your blaster, shooting
             to kill. Though aching, you venture deeper into the dave and find the dead body of the
             fugitive; they weren't so lucky.
         `,
@@ -53,23 +53,23 @@ const iceCave = {
 
 const lichenCave = {
     id: 'lichen-cave',
-    title: 'Snowy Garden',
+    title: 'The Lichen Cave',
     map: {
-        top: '25%',
+        top: '85%',
         left: '15%'
     },
-    image: 'alchemy-logo.png',
+    image: 'cave-winter-lichen.jpg',
     description: `
         Entering this cave, you see the tracks of what look like large lizards. Cautious, you draw your blaster
-        but find that this cave is home to a herd of tauntaun, large but docile, ridable and furry. They are
+        but find that this cave is home to a herd of tauntaun, large but docile beasts. They are
         grazing on the lichen. They look up uncertainly as you approach them from around a corner. Using your
         helmet's visual scanner, you detect a lone humanoid hiding among them--the fugitive. What do you do?
     `,
     choices: [{
         id: 'feed',
-        description: 'Feed the tauntauns some of the lichen from near the cave entrance',
+        description: 'Feed the tauntaun some of the lichen from near the cave entrance',
         result: `
-            Because they are wary of predators, the tauntauns do not venture to the cave mouth often.
+            Because they are wary of predators, the tauntaun do not often venture to the cave mouth.
             They are grateful to you for the high-quality lichen that you picked there. One tauntaun
             befriends you and allows you to ride it. Doing so, you catch the fugigive quickly, and alive.
         `,
@@ -79,18 +79,18 @@ const lichenCave = {
         id: 'blaster',
         description: 'Pull your blaster as protection from stampedes',
         result: `
-            The tauntauns must have been hunted before, because they recognize your blaster and begin
+            These tauntaun must have been hunted before, because they recognize your blaster and begin
             to stampede. In the process, you are lightly trampled, and your quary is heavily trampled,
-            killing them. Eventually, you scare the tauntauns off with blaster shots and, though injured,
+            fatally killed. Eventually, you scare the tauntaun off with blaster shots and, though injured,
             retrieve the fugitive's body.
         `,
         health: -35,
         bounty: 250
     }, {
         id: 'approach',
-        description: 'Attempt to walk among the tauntauns toward the fugitive',
+        description: 'Attempt to walk among the herd toward the fugitive',
         result: `
-            You calmly, slowly walk toward the herd. However, before you can move through them, one is
+            You calmly, slowly walk toward the group of tauntaun. However, before you can move through them, one is
             spooked and they run amok. You are knocked down and in the confusion, the fugitive flees after
             the creatures into the dark. After hours of searching, you conclude that you will freeze to death
             yourself, and you abandon the search.
@@ -102,19 +102,18 @@ const lichenCave = {
 
 const bigCave = {
     id: 'big-cave',
-    title: 'Sub-Glacial Cavern',
+    title: 'The Large Cave',
     map: {
         top: '25%',
         left: '60%'
     },
-    image: 'alchemy-logo.png',
+    image: 'cave-large-mouth.jpg',
     description: `
-        This is a truly massive cave, with snow drifts high up the walls and a roof too high to see in the 
+        This is a truly massive cave, with immense snow drifts up the walls and a roof too high to see in the 
         low light. You crack open a glowing-green light stick and toss it up as far as you can. As it comes down, you catch
-        sight of something moving on the far side of the cave. You turn your helmet lamp to max and run in
+        sight of something moving on the far side of the cave: the fugitive! You turn your helmet lamp to max and run in
         that direction. A burst of sound and light reveals that the fugitive has shot up at the ceiling with
-        a blaster. A giant icicle falls, triggering an small underground avalanche and blocking the way 
-        to the fugitive. What do you do?
+        their blaster. A giant icicle falls, triggering an small avalanche and blocking the way. What do you do?
     `,
     choices: [{
         id: 'melt',

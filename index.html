@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Wraith Canyon</title>
@@ -11,20 +13,29 @@
 
 <body>
     <header>
-        <div class="adventure-title">Bounty Hunter: The Caves of Wraith Canyon</div>
-        <div id="player-stats">
-            <span id="player-health"></span>
-            <span id="player-credits"></span>
-        </div>
+        <section class="top-bar">
+            <div id="player-stats">
+                <span id="player-health"></span>
+                <span id="player-credits"></span>
+            </div>
+        </section>
+        <section class="title-bar">
+            <div class="logo-box">
+                <img src="./assets/mando-circle-orange_small.png" id="logo-image" height="75">
+            </div>
+            <div class="adventure-title">Bounty Hunter: The Caves of Wraith Canyon</div>
+        </section>
+        <section class="border-bar"></section>
+
     </header>
     <main>
-        <section>
-            <form>
+        <section class="game-start">
+            <form class="user-controls">
                 <label>
                     Name
                     <input name="name">
                 </label>
-                <p>Choose which Mandalorian armor to wear:</p>
+                <p>Choose your armor:</p>
                 <label>
                     Blue
                     <input type="radio" name="armor" value="blue">
@@ -37,7 +48,7 @@
                     Stealth
                     <input type="radio" name="armor" value="stealth">
                 </label>
-                <button>Play</button>
+                <button class="start-button">Play</button>
             </form>
             <div></div>
         </section>

@@ -1,5 +1,25 @@
 # EDIT-THIS-README
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Example localStorage user object in stringified form:
+'{"name":"Ernest","armor":"blue","health":20,"bounty":1500,"completed":{"icecave":true,"lichen-cave":true,"big-cave":true}}'
+
+
+
+
+
 {
 	"super console log": {
 		"prefix": "lg",

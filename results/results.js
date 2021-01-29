@@ -1,5 +1,9 @@
 import { healthFeedback, wealthFeedback } from './condition-arrays.js';
 import { physicalDescription, financialDescription } from './results-utils.js';
+import { displayStats } from '../utils.js';
+
+
+displayStats();
 
 const USER = 'USER';
 const user = JSON.parse(localStorage.getItem(USER));
@@ -21,7 +25,7 @@ const postScript = `${physicalMessage} and ${wealthMessage}, you return to your 
 
 if (user.health <= 0) {
     h1.textContent = `Tragic outcome, that.`;
-    p.textContent = `If you can read this, then you have become one with the Force. Better luck next time.`;
+    p.textContent = `If you can read this, then you have become One with the Force. Congratulations on that, and better luck next time, just the same.`;
 } else {
     h1.textContent = `Congratulations on surviving the hunt!`;
     p.textContent = postScript;

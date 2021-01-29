@@ -16,8 +16,12 @@ export function displayStats() {
 
     const user = JSON.parse(localStorage.getItem(USER));
 
-    hSpan.textContent = `${user.health} health`;
-    cSpan.textContent = `${user.bounty} credits`;
+    hSpan.textContent = `health: ${user.health}`;
+    cSpan.textContent = `credits: ${user.bounty}`;
 
 }
+
+//the output of this function is a couple of *strings* e.g. :
+//   health: 20
+//   credits: 1000
 
